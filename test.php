@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head id="header">
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
@@ -10,6 +10,16 @@
 
     <title>Tohshige by tohshige</title>
   </head>
+  <script>
+  $(document).ready(function () {
+   hsize = $(window).height();
+   $("#header").css("height", hsize + "px");
+  });
+  $(window).resize(function () {
+   hsize = $(window).height();
+   $("#header").css("height", hsize + "px");
+  });
+  </script>
 
   <body>
 teset
