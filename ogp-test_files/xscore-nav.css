@@ -1,0 +1,166 @@
+@charset "UTF-8";
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+/* ------------------------------------------
+  BASE STYLES
+--------------------------------------------- */
+
+section {
+  border-bottom: 1px solid #999;
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+
+/* ------------------------------------------
+  NAVIGATION STYLES
+--------------------------------------------- */
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-collapse,
+.nav-collapse * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 25px;
+  padding: 2px;
+  background: #eee;
+}
+
+.nav-collapse,
+.nav-collapse ul {
+  list-style: none;
+  width: 100%;
+  float: left;
+}
+
+.nav-collapse li {
+  float: left;
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse li {
+    width: 10%;
+    *width: 9%; /* IE7 Hack */
+    _width: 9%; /* IE6 Hack */
+  }
+}
+.nav-collapse a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  background: #2e2e2e;
+  border-bottom: 1px solid white;
+  padding: 0.7em 1em;
+  float: left;
+}
+
+.nav-collapse div {
+  display: inline-block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  margin-top: 2px;
+}
+.nav-collapse div.sp {
+  background: url("../image/sp/logo_menu_arrow.gif");
+}
+.nav-collapse div.pc {
+  background: url("../image/sp/logo_menu_pc.gif");
+}
+
+.nav-collapse ul ul a {
+  background: #232323;
+  padding-left: 2em;
+}
+
+/* ------------------------------------------
+  NAV TOGGLE STYLES
+--------------------------------------------- */
+
+@font-face {
+  font-family: "responsivenav";
+  src:url("../icons/responsivenav.eot");
+  src:url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+    url("../icons/responsivenav.ttf") format("truetype"),
+    url("../icons/responsivenav.woff") format("woff"),
+    url("../icons/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav-toggle {
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  text-indent: -999px;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 55px;
+  float: right;
+}
+
+.nav-toggle:before {
+  color: #2e2e2e; /* Edit this to change the icon color */
+  font-family: "responsivenav", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  position: absolute;
+  content: "≡";
+  text-indent: 0;
+  text-align: center;
+  line-height: 55px;
+  speak: none;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-toggle.active::before {
+  content:"x";
+}
+
+.nav-footer {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*float: none;*/
+}
+
+.nav-footer ul {
+  -webkit-padding-start: 0px;
+}
+
+.nav-footer ul li {
+  display: inline-block;
+  padding: 0 8px;
+  list-style: none;
+  word-wrap: break-word;
+}
