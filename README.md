@@ -3,10 +3,10 @@
 ### h3 test
 
 url
-> http://tohshige.github.io/tohshige/
+> http://tohshige.github.io/tohshige/  
 ogp test
-> http://tohshige.github.io/tohshige/ogp-test.htm
->> edit https://github.com/tohshige/tohshige/edit/gh-pages/ogp-test.htm
+> http://tohshige.github.io/tohshige/ogp-test.htm  
+>> edit https://github.com/tohshige/tohshige/edit/gh-pages/ogp-test.htm  
 
 >> test markdown visual code
 
