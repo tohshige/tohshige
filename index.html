@@ -57,7 +57,28 @@
               console.log( 'Player:' + playerId + ' is ready '); 
          }
  });
-</script>      
+</script>    
+	      
+	      2つ目
+<div id="test2" style="width:400px;height:330px;"></div> 
+<script src="http://cdnapi.kaltura.com/p/101/sp/10100/embedIframeJs/uiconf_id/23448188/partner_id/101"></script>
+<script>
+      kWidget.embed({
+         'targetId': 'test2',
+         'wid': '_101',
+         'uiconf_id' : '23448188',
+         'entry_id' : '0_huew9onh',
+         'flashvars':{ // flashvars allows you to set runtime uiVar configuration overrides. 
+              'autoPlay': false
+         },
+         'params':{ // params allows you to set flash embed params such as wmode, allowFullScreen etc
+              'wmode': 'transparent'
+         },
+         readyCallback: function( playerId ){
+              console.log( 'Player:' + playerId + ' is ready '); 
+         }
+ });
+</script> 
 	      -------------------------------------------------------------
           <div class="mainbannerL">
             <div id="main_banner_img" style="padding:0;">
